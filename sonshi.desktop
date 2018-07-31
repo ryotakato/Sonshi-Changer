@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Sonshi Changer
+Exec=/home/mtfirst/Sonshi-Changer/sonshi.sh
+Icon=/home/mtfirst/Sonshi-Changer/sonshi-icon.png
+Path=/home/mtfirst/Sonshi-Changer
+NoDisplay=false
+Categories=Utility;
+StartupNotify=false
+Terminal=false
+Name[ja]=sonshi.desktop
+
