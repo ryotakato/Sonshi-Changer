@@ -2,9 +2,9 @@
 Type=Application
 Encoding=UTF-8
 Name=Sonshi Changer
-Exec=/home/mtfirst/Sonshi-Changer/sonshi.sh
-Icon=/home/mtfirst/Sonshi-Changer/sonshi-icon.png
-Path=/home/mtfirst/Sonshi-Changer
+Exec=/home/tavi/develop/keyboard/Sonshi-Changer/sonshi.sh
+Icon=/home/tavi/develop/keyboard/Sonshi-Changer/sonshi-icon.png
+Path=/home/tavi/develop/keyboard/Sonshi-Changer
 NoDisplay=false
 Categories=Utility;
 StartupNotify=false

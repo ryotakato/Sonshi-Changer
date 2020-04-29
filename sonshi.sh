@@ -1,16 +1,16 @@
 #!/bin/bash
-id=$(xinput list | grep Translate | grep -o 'id=[0-9]*' | grep -o [0-9]*)
+id=$(xinput list | grep LITE-ON | grep -o 'id=[0-9]*' | grep -o [0-9]*)
 
-state=$(xinput list | grep Translated)
+state=$(xinput list | grep LITE-ON)
 # 内蔵キーボードの行のみを抽出できるよう、固有の文字列をgrepに渡す
-# 作者の環境では Translated
+# この環境では LITE-ON
 
 master=3
 
 if [[ $state =~ floating ]];
 
 	then
-		notify-send '尊師スタイルOFF' \ "内蔵キーボード - 接続" -i ~/Sonshi-Changer/sonshi_off.jpg;
+		notify-send '尊師スタイルOFF' \ "JPキーボード - 接続" -i ~/Sonshi-Changer/sonshi_off.jpg;
 
 		xinput reattach $id $master
 		fcitx-imlist -s mozc
@@ -26,7 +26,7 @@ if [[ $state =~ floating ]];
 
 elif [[ $state =~ slave ]];
 	then
-		notify-send "尊師スタイル ON" \ "内蔵キーボード - 切断" -i ~/Sonshi-Changer/sonshi_on.jpg;
+		notify-send "尊師スタイル ON" \ "JPキーボード - 切断" -i ~/Sonshi-Changer/sonshi_on.jpg;
 
 		xinput float $id
 		fcitx-imlist -s mozc
@@ -41,6 +41,6 @@ elif [[ $state =~ slave ]];
 
 
 else
-		notify-send "尊師スタイル エラー" \ "sonshi.h を実行できませんでした";
+		notify-send "尊師スタイル エラー" \ "sonshi.sh を実行できませんでした";
 
 fi
