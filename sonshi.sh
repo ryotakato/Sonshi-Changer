@@ -20,8 +20,8 @@ if [[ $state =~ floating ]];
 		sed -i -e '3c\TriggerKey=CTRL_SPACE' ~/.config/fcitx/config
 
 		# alt-ime-switch OFF 書き換えなくても同じだが、一応 USとJPキーボードでは使うかな入力文字も違う
-		sed -i -e '34c\#ActivateKey=HIRAGANAKATAKANA HANGUL' ~/.config/fcitx/config
-		sed -i -e '36c\#InactivateKey=ZENKAKUHANKAKU HANGULHANJA' ~/.config/fcitx/config
+		sed -i -e '34c\ActivateKey=HIRAGANAKATAKANA HANGUL' ~/.config/fcitx/config
+		sed -i -e '36c\InactivateKey=ZENKAKUHANKAKU HANGULHANJA' ~/.config/fcitx/config
 
 
 elif [[ $state =~ slave ]];
@@ -36,8 +36,8 @@ elif [[ $state =~ slave ]];
 		sed -i -e '3c\TriggerKey=CTRL_SPACE' ~/.config/fcitx/config
 
 		# alt-ime-switch ON 書き換えなくても同じだが、一応 USとJPキーボードでは使うかな入力文字も違う
-		sed -i -e '34c\#ActivateKey=HIRAGANAKATAKANA HANGUL' ~/.config/fcitx/config
-		sed -i -e '36c\#InactivateKey=ZENKAKUHANKAKU HANGULHANJA' ~/.config/fcitx/config
+		sed -i -e '34c\ActivateKey=HIRAGANAKATAKANA HANGUL' ~/.config/fcitx/config
+		sed -i -e '36c\InactivateKey=ZENKAKUHANKAKU HANGULHANJA' ~/.config/fcitx/config
 
 
 else
